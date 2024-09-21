@@ -8,4 +8,7 @@ export default defineConfig({
   worker: {
     plugins: () => [comlink()],
   },
+  server: {
+    host: '0.0.0.0'
+  }
 });

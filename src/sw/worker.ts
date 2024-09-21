@@ -3,6 +3,6 @@
 
 import { blockingFunc } from "../utils";
 
-export const somRPCFunc = () => {
+export const someRPCFunc = () => {
     blockingFunc();
 };

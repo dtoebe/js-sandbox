@@ -1,7 +1,7 @@
 import React, { useCallback, useState } from "react";
 import { blockingFunc, randomIntFromInterval, workerInstance } from "./utils";
 
-export const App: React.FC = () => {
+const App: React.FC = () => {
   const [ random, setRandom ] = useState<number>(0);
 
   const workerCall = useCallback(async () => {
@@ -23,4 +23,6 @@ export const App: React.FC = () => {
       <button onClick={randomIntHandler}>Random Int {random}</button>
     </section>
   )
-}
+};
+
+export default App;
